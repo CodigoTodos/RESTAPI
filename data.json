@@ -1,0 +1,24 @@
+[
+	{
+        "id":1,
+		"nome": "Bruno",
+        "idade": 25,
+        "curso": "Informática",
+        "ano": 1
+        
+	},
+	{
+        "id":2,
+		"nome": "Carlos",
+        "idade": 27,
+        "curso": "Gestão",
+        "ano": 2
+	},
+	{
+        "id":3,
+		"nome": "Rui",
+        "idade": 30,
+        "curso": "Marketing",
+        "ano": 2
+	}	
+]

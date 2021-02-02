@@ -1,0 +1,90 @@
+API (Application Programming Interface) 
+Interface de Programação de Aplicações 
+
+Conjunto de Rotinas e Padrões estabelecidos 
+por um software para que outras aplicações 
+possam usar as suas funcionalidades sem conhecer
+em detalhe a sua implementação.
+
+REST (Representational State Transfer)
+Protocolo de comunicação que utiliza 
+padrões entre sistemas Web de modo a
+facilitar a comunicação entre si
+
+Os sistemas compativeis com REST são
+denominados de RESTful. 
+
+Geralmente é utilizado o protocolo HTTP.
+
+O REST tem algumas regras: 
+
+Uniform Interface (Interface Uniforme): 
+A construção da interface deve permitir
+a interação uniforme com o servidor 
+independentemente do dispositivo
+ou aplicativo que use a interface.
+Os vários clientes acedem ao mesmos endpoints,
+executam as mesmas acções e recebem as mesmas
+respostas. 
+
+
+Client-Server (Separação do cliente e do Servidor): 
+Uma alteração do lado do cliente não
+altera o lado do servidor e vice versa
+Apenas é necessário saber o formato das mensagens
+usado em cada um dos lados.
+
+Stateless (Sem estado): Uma requisição do cliente (Request)
+deve conter todas as informações necessárias 
+para o servidor responder (Response)
+
+Layered System (Sistema em camadas):
+O cliente acede a um endpont e recebe a resposta
+sem precisar de saber qual a complexidade e recursos 
+necessários que o servidor teve de usar para dar a 
+resposta.
+
+Cacheable (Cache)
+As respostas devem indicar se podem 
+ou não ser guardadas em memoria cache.
+
+Opcional
+Code on demand (Codigo sob pedido):
+Os servidores também podem fornecer 
+código executável para o cliente.
+
+Uma solicitação REST necessita de:
+
+Um método de http da operação a ser exexutada
+Uma URL (endpoint)
+Um cabeçaho onde é passado as informações
+do pedido
+
+GET: Acede a um conjunto de dados ou a um dado especifico.
+POST: Cria uma novo dado
+PUT: Atualiza uma dado especifico
+DELETE: Remove um dado espefico
+
+Exemplos:
+
+GET https//api.com/alunos - Retorna uma lista de todos os alunos
+POST https//api.com/alunos - Cria um novo aluno
+
+GET https//api.com/alunos/1 - Retorna o aluno com o id 1
+PUT  https//api.com/alunos/1 Actualiza dados do aluno com id 1
+DELETE https//api.com/alunos/1 Elimina o aluno com o id 1
+
+Deve ser dada sempre uma resposta ao cliente. 
+
+Códigos HTTP
+
+2xx - Sucesso
+200 - ok
+201 - Criado 
+
+4xx - Erro Cliente
+400 - Pedido Errado
+404 - Não Encontrado
+
+5xx - Erro no Servidor
+500 - Erro Interno no servidor
